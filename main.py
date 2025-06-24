@@ -1,5 +1,6 @@
 import os
 import time
+import pandas as pd
 import mysql.connector
 from dotenv import load_dotenv
 from selenium import webdriver
@@ -160,7 +161,18 @@ for num in range(next_game_week_index,38):
 
 # ========================================================================
 
-
-
 # DRIVER QUITTING
 driver.quit()
+
+# EXPORTING THE RESULTS IN A CSV FILE USING PANDAS
+matches_df = pd.read_sql("SELECT * FROM matches", connect)
+matches_df.to_csv("matches_data.csv", index=False, encoding='utf-8-sig')
+teams_df = pd.read_sql("SELECT * FROM teams", connect)
+teams_df.to_csv("teams_data.csv", index=False, encoding='utf-8-sig')
+
+# DISPLAYING THE RESULTS WITH PANDAS
+print(pd.read_csv("matches_data.csv"))
+print("="*120)
+print(pd.read_csv("teams_data.csv"))
+
+

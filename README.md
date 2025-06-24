@@ -68,4 +68,3 @@ Football Data Engine is an advanced Python project designed to scrape detailed f
 ├── database.py            # Database connection and data insertion logic
 ├── constants.py           # Constants like URLs and mappings
 ├── requirements.txt       # Required Python packages
-└── README.md              # This documentation file
