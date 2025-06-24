@@ -1,7 +1,3 @@
-# Football-Data-Engine
-
-Advanced Python scraper for football match data from Soccerway and Transfermarkt, storing results in MySQL.
-=======
 # Football Data Engine
 
 Football Data Engine is an advanced Python project designed to scrape detailed football match data from websites like Soccerway and Transfermarkt, and store it in a well-structured MySQL database.
@@ -73,4 +69,3 @@ Football Data Engine is an advanced Python project designed to scrape detailed f
 ├── constants.py           # Constants like URLs and mappings
 ├── requirements.txt       # Required Python packages
 └── README.md              # This documentation file
->>>>>>> 4f3d934 (Initial commit: Add FootballDataEngine project files)
