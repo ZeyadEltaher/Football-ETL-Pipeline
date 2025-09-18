@@ -1,6 +1,6 @@
-# Football Data Engine
+# Football ETL Pipeline
 
-Football Data Engine is an advanced Python project designed to scrape detailed football match data from websites like Soccerway and Transfermarkt, and store it in a well-structured MySQL database.
+Football ETL Pipeline is an advanced Python project designed to scrape detailed football match data from websites like Soccerway and Transfermarkt, and store it in a well-structured MySQL database.
 
 ---
 
@@ -59,7 +59,7 @@ Football Data Engine is an advanced Python project designed to scrape detailed f
 
 ## Project Structure
 ```
-/Football_Data_Engine
+/Football_ETL_Pipeline
 │
 ├── sample.env             # Environment variables for DB credentials
 ├── main.py                # Main Python script to run the scraper
